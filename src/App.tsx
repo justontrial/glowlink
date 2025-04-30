@@ -11,6 +11,8 @@ import { Dashboard } from './components/Dashboard'
 import { PublicProfile } from './components/PublicProfile'
 import { Settings } from './components/Settings'
 import { BookAppointment } from './BookAppointment/BookAppointment'
+import ProductManagementPage from './components/ProductManagement/ProductManagementPage'
+
 
 function App() {
   return (
@@ -55,6 +57,9 @@ function App() {
           <Route path="/HowItWorks" element={<><Navbar showLogoAsHomeButton /><HowItWorks /></>} />
           <Route path="/Testimonials" element={<><Navbar showLogoAsHomeButton /><Testimonials /></>} />
           <Route path="/Features" element={<><Navbar showLogoAsHomeButton /><Features /></>} />
+          <Route path="/products" element={<ProductManagementPage />} />
+          <Route path="/productmanagement" element={<ProductManagementPage />} />
+          <Route path="/login" element={<><Navbar showLogoAsHomeButton minimal /><Login /></>} />
         </Routes>
       </div>
     </Router>
